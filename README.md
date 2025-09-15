@@ -1,6 +1,6 @@
 # Sistema de Processamento Paralelo de Imagens
 
-Este projeto implementa um sistema de processamento paralelo de imagens em Python, conforme as especificações do documento "Trabalho M1 - 2025-2.pdf". O sistema utiliza dois processos independentes que se comunicam via FIFO (Named Pipe) e threads para processamento paralelo.
+Este projeto foi um sistema de processamento paralelo de imagens em Python, conforme as especificações para o "Trabalho M1 - 2025-2.pdf" da matéria de Sistemas Operacionais. O sistema utiliza dois processos independentes que se comunicam via FIFO (Named Pipe) e threads para processamento paralelo.
 
 ## 🚀 Início Rápido
 
