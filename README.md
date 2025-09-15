@@ -6,7 +6,14 @@ Este projeto implementa um sistema de processamento paralelo de imagens em Pytho
 
 ### 1. Executar Teste Simples
 ```bash
+# Usar imagem de teste criada automaticamente
 python test_simple.py
+
+# Usar uma imagem PGM existente
+python test_simple.py minha_imagem.pgm
+
+# Criar uma imagem de exemplo interessante
+python test_simple.py --create-example
 ```
 
 ### 2. Executar Demonstração Completa
@@ -22,6 +29,30 @@ python worker.py /tmp/imgpipe output.pgm 0
 # Terminal 2: Iniciar Sender
 python sender.py /tmp/imgpipe input.pgm
 ```
+
+## 🖼️ Usando Imagens Existentes
+
+O sistema agora suporta o uso de imagens PGM existentes! Você pode:
+
+1. **Usar sua própria imagem PGM:**
+   ```bash
+   python test_simple.py sua_imagem.pgm
+   ```
+
+2. **Criar uma imagem de exemplo interessante:**
+   ```bash
+   python test_simple.py --create-example
+   ```
+
+3. **Usar imagem de teste padrão (padrão de xadrez):**
+   ```bash
+   python test_simple.py
+   ```
+
+### Formatos Suportados
+- **PGM P5**: Formato binário de imagens em tons de cinza
+- **Dimensões**: Qualquer tamanho (o sistema se adapta automaticamente)
+- **Valores**: 0-255 (8 bits por pixel)
 
 ## 📁 Estrutura do Projeto
 
